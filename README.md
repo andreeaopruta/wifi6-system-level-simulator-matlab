@@ -1,13 +1,13 @@
 # Wi-Fi 6 System-Level Simulator in MATLAB
 
-## 📡 Project Overview
+##  Project Overview
 This project presents the implementation and analysis of a system-level simulation for WLAN networks based on the IEEE 802.11ax (Wi-Fi 6) standard. Built entirely in MATLAB, this application features a custom Graphical User Interface (GUI) to configure a multi-node network (Access Point and Stations). 
 
 Instead of computationally expensive bit-by-bit physical layer simulations, this project uses **PHY abstraction** (Link-to-System modeling). It approximates network performance mathematically based on node distance, allowing for rapid evaluation of Throughput, Packet Loss Ratio (PER), and Latency.
 
 ![GUI Configuration Tab](images/config-tab.jpg)
 
-## ⚙️ Features & Architecture
+##  Features & Architecture
 The MATLAB GUI is divided into three functional areas:
 
 ### 1. Topology & Configuration
@@ -31,7 +31,3 @@ The system calculates and displays performance bar charts based on the Euclidean
 
 ![Performance Metrics Tab](images/performance-tab.jpg)
 
-## 🔬 Methodology & Simulation Accuracy
-This simulator is designed around the principles of the **IEEE 802.11 TGax evaluation methodology**. By abstracting the Physical Layer, the system maps the Signal-to-Interference-plus-Noise Ratio (SINR) directly to Packet Error Rate (PER) curves. 
-
-This Link-to-System (L2S) approach ensures that the macroscopic behavior of the network (throughput degradation over distance, increased collisions, and latency spikes) is modeled accurately without the massive computational overhead required by full waveform modeling. The probabilistic state machine effectively demonstrates the time-sharing nature of dense Wi-Fi 6 deployments.
