@@ -5,8 +5,6 @@ This project presents the implementation and analysis of a system-level simulati
 
 Instead of computationally expensive bit-by-bit physical layer simulations, this project uses **PHY abstraction** (Link-to-System modeling). It approximates network performance mathematically based on node distance, allowing for rapid evaluation of Throughput, Packet Loss Ratio (PER), and Latency.
 
-![GUI Configuration Tab](images/config-tab.jpg)
-
 ##  Features & Architecture
 The MATLAB GUI is divided into three functional areas:
 
@@ -29,5 +27,5 @@ The system calculates and displays performance bar charts based on the Euclidean
 * **Packet Loss Ratio:** Uses threshold logic where losses are $0$ up to $50m$, then increase linearly.
 * **Latency:** Calculated as a base value of $0.2s$ plus a distance-dependent component ($d/500$).
 
-![Performance Metrics Tab](images/performance-tab.jpg)
+
 
